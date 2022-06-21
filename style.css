@@ -33,7 +33,7 @@ body {
 
 input {
     border-style: none;
-    background-color: #ffedd5;
+    background-color: #cffafe;
     border-radius: 20px;
     padding: 6px 220px;
 }
@@ -99,7 +99,7 @@ input {
 
 button {
     border-style: none;
-    background-color: #fb923c;
+    background-color: #facc15;
     color: white;
     padding: 10px 30px;
     border-radius: 30px;
@@ -110,7 +110,7 @@ button {
 }
 
 #sidebar {
-    background-color: #fdba74;
+    background-color: #06b6d4;
     padding: 20px;
     grid-column: 1/2;
     grid-row: 1/11;
@@ -164,7 +164,7 @@ button {
 #main {
     grid-column: 2/8;
     grid-row: 3/11;
-    background-color: #ffedd5;
+    background-color: #cffafe;
     display: grid;
     grid-template-columns: repeat(2, 1fr);
 }
@@ -191,7 +191,7 @@ button {
     border-radius: 5px;
     margin-right: 40px;
     background-color: white;
-    box-shadow: 3px 4px #fed7aa;
+    box-shadow: 3px 4px #a5f3fc;
     padding: 50px 40px;
 }
 
@@ -211,7 +211,7 @@ button {
 }
 
 .color-block {
-    background-color: #fb923c;
+    background-color: #fde047;
     width: 6%;
     border-radius: 6px 0 0 6px;
     margin-left: -40px;
@@ -230,28 +230,79 @@ button {
     padding-right: 30px;
 }
 
+.announcement-container h3 {
+    margin-top: -5px;
+    margin-bottom: 24px;
+}
+
 .announcement-container {
     margin-top: 30px;
-    margin-right: 20px;
+    margin-right: 30px;
 }
 
 .announcements {
+    display: grid;
+    grid-template-rows: repeat(2, 100px);
     background-color: white;
-    border-radius: 5px;
-    box-shadow: 2px 4px #fed7aa;
+    border-radius: 8px;
+    box-shadow: 2px 4px #a5f3fc;
+    padding: 2px 40px;
+    margin-bottom: -100px;
+}
+
+.announcement-text p {
+    color: gray;
+    font-size: 15px;
+    margin-top: -20px;
+}
+
+.line-block {
+    background-color: #d1d5db;
+    margin-top: 10px;
+    grid-row: 2;
+    height: 1%;
 }
 
 .trending-container {
     display: grid;
     margin-right: 20px;
+    margin-top: 100px;
 }
 
-.trends {
+.trend {
     background-color: white;
     border-radius: 5px;
+    padding: 10px 40px;
+    display: flex;
+    margin-bottom: -25px;
+}
+
+.trend img {
+    height: 30px;
+    border-radius: 40px;
+    margin-top: 10px;
+}
+
+.trend-text {
+    margin-left: 20px;
+    margin-top: -10px;
+}
+
+.trend-text p {
+    color: gray;
+    margin-top: -20px;
 }
 
 a {
     text-decoration: none;
     color: white;
 } 
+
+footer {
+    margin-left: 500px;
+    margin-top: 25px;
+}
+
+footer a {
+    color: black;
+}
